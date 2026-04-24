@@ -1,0 +1,23 @@
+# Dependencies & build artifacts
+node_modules/
+target/
+pkg/
+webapp/build/
+webapp/node_modules/
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.travis.yml
+.appveyor.yml
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.gif
+*.md
+LICENSE_*

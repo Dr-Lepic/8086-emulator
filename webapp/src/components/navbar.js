@@ -68,13 +68,13 @@ function Navbar() {
             <Typography
               color="primary"
               component="span"
-              onClick={() => history.push("/8086-emulator-web/")}
+              onClick={() => history.push("/")}
               className={classes.title}
               style={{ fontSize: matches ? 30 : 24 }}
               tabIndex="0"
               onKeyUp={(e) => {
                 if (e.key === "Enter") {
-                  history.push("/8086-emulator-web/");
+                  history.push("/");
                 }
               }}
               aria-label="Visit the Home Page"
@@ -101,12 +101,12 @@ function Navbar() {
               </a>
             </Tooltip>
           )}
-          {loc.pathname !== "/8086-emulator-web/help" && (
+          {loc.pathname !== "/help" && (
             <Tooltip title="Instructions Page" arrow>
               <IconButton
                 aria-label="Visit the Instructions Page"
                 role="link"
-                onClick={() => history.push("/8086-emulator-web/help")}
+                onClick={() => history.push("/help")}
               >
                 <span
                   style={
@@ -121,10 +121,10 @@ function Navbar() {
               </IconButton>
             </Tooltip>
           )}
-          {loc.pathname !== "/8086-emulator-web/compile" && (
+          {loc.pathname !== "/compile" && (
             <Tooltip title="Compiler Page" arrow>
               <IconButton
-                onClick={() => history.push("/8086-emulator-web/compile")}
+                onClick={() => history.push("/compile")}
                 aria-label="Visit the Compiler Page"
                 role="link"
               >
