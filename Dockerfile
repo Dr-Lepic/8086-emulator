@@ -39,6 +39,7 @@ COPY webapp/ ./
 
 # Build with PUBLIC_URL set to / for local Docker usage
 ENV PUBLIC_URL=/
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN npm run build
 
 # ============================================================

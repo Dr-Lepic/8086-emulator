@@ -3,5 +3,5 @@ services:
     build: .
     container_name: 8086-emulator
     ports:
-      - "9090:80"
+      - "9000:80"
     restart: unless-stopped
