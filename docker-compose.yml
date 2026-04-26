@@ -1,0 +1,7 @@
+services:
+  emulator:
+    build: .
+    container_name: 8086-emulator
+    ports:
+      - "9000:80"
+    restart: unless-stopped

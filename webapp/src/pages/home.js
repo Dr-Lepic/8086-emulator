@@ -122,7 +122,7 @@ function Home() {
               </Typography>
               <div className={classes.btnDiv}>
                 <Link
-                  to="/8086-emulator-web/compile"
+                  to="/compile"
                   className={classes.btnLink}
                 >
                   <Button
@@ -134,7 +134,7 @@ function Home() {
                     Try Online 8086 Compiler
                   </Button>
                 </Link>
-                <Link to="/8086-emulator-web/help" className={classes.btnLink}>
+                <Link to="/help" className={classes.btnLink}>
                   <Button
                     variant="outlined"
                     color="primary"
